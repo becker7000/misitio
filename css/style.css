@@ -1,0 +1,235 @@
+/* Declarando mi paleta de colores y 
+   mis diferentes tamaños de fuentes css*/
+
+:root{ 
+    --black: #211d1d;
+    --white: #e2e2e2;
+    --gray: #444444;
+    --blue-forte: #45818e;
+    --blue-light: #76a5af;
+    --ssm: 14px;
+    --sm: 18px;
+    --md: 26px;
+    --lg: 36px;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--white);
+}
+
+/* Contendor del título y slogan... */
+
+.first-container{
+    margin: 16px auto;
+    padding: 20px;
+    width: 80%;
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/20/13/52/board-453758_960_720.jpg");
+    background-repeat: initial;
+    height: 172px;
+    color: var(--black);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-size: var(--lg);
+    margin: 0;
+}
+
+.pjr{
+    display: inline;
+}
+
+.programmer{
+    width: 56px;
+    display: inline;
+    margin-left: 12px;
+    border-radius: 4px;
+    position: relative;
+    top: 8px;
+    right: 8px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: var(--sm);
+}
+
+/* Barra de navegación */
+
+.navbar{
+    width: 30%;
+    margin: 12px auto;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 4px;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--gray);
+    border-radius: 16px;
+}
+
+.navbar li a {
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: var(--black);
+}
+
+/* Acerca de mí */
+
+.second-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    margin: 40px auto;
+    width: 70%;
+    border-top: 4px solid var(--gray);
+    border-bottom: 4px solid var(--gray);
+    border-radius: 0 28px 0 28px;
+}
+
+.erick{
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid var(--gray);
+    margin:20px auto;
+}
+
+.about-me{
+    align-items: center;
+    text-align: center;
+    color: var(--black);
+    font-size: var(--sm);
+    margin: 24px;
+}
+
+.first-text{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.rocket,.social{
+    width: 100px;
+    margin-left: 20px;
+    position: relative;
+    top: 8px;
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+}
+
+.second-text{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.ancor{
+    text-decoration: none;
+    color: var(--black)
+}
+
+.ancor:hover{
+    color: var(--blue-forte);
+}
+
+/* Hobbies, habilidades y lenguajes */
+
+.third-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 70%;
+    margin: 24px auto;
+    color: var(--white);
+    margin-bottom: 80px;
+}
+
+.hobbies, .abilities, .languages{
+    padding-left: 20px;
+    padding-right: 8px;
+    font-size: var(--ssm);
+    background-color: var(--gray);
+    border-radius: 16px;
+    margin: 16px;
+}
+
+.hobbies:hover, .abilities:hover, .languages:hover{
+    padding-left: 20px;
+    padding-right: 8px;
+    font-size: var(--ssm);
+    background-color: var(--black);
+    color: var(--blue-light);
+    border-radius: 16px;
+    margin: 16px;
+}
+
+/* Apuntes en markdown*/
+.fifth-container{
+    text-align: center;
+    color: var(--black);
+    margin: 24px;
+}
+
+.markdown{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.notesA, .notesB{
+    border-radius: 24px;
+    background-color: var(--white);
+}
+
+.notesA:hover, .notesB:hover{
+    border-radius: 24px;
+    background-color: var(--blue-forte);
+}
+
+.iframe-c{
+    margin: 0 12px 12px 12px;
+}
+
+/* Redes sociales */
+.fourth-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 20px 20px 0 0;
+}
+
+.fourth-container:hover{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--blue-light);
+    border-radius: 20px 20px 0 0;
+}
+
+.fb, .in{
+    width: 80px;
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>El sitio de Erick</title>
+</head>
+<body onload="cambiarColor()">
+
+    <div class="first-container">
+        <div class="title-container" id="title-container">
+            <h1 class="title">Bienvenidos al sitio de Erick</h1>
+            <h2 class="pjr">Programador Java Jr</h2>
+            <img class="programmer" src="images/programador1.gif" alt="programador">
+        </div>
+        <h3 class="subtitle">La cuestión no es ¿se puede?, sino ¿cómo?</h3>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Redes</a></li>
+          </ul>
+    </div>
+
+    <div id="inicio">
+        <br>
+        <div class="second-container" >
+            <img class="erick" src="images/Erick.png" alt="erick">
+            <div class="about-me">
+                <h2>¿Quién soy?</h2>
+                <div class="first-text">
+                    <p>
+                        Bienvenidos a mi sitio, les contaré un poco sobre mí,
+                        actualmente en julio de 2022 estoy estudiando un diplomado en lenguaje Java
+                        en el Centro de Investigación en Computación del Instituto 
+                        Politécnico Nacional: <a class="ancor" href="https://www.cic.ipn.mx/" target="_blank"><strong>CIC IPN</strong></a>.
+                    </p>
+                    <img class="rocket" src="images/rocket.gif" alt="gif">
+                </div>
+                <p>
+                   Soy un apasionado de la programación y he trabajado dando
+                   capacitaciones en Java y otras tecnologías a personal de 
+                   algunos corporativos importantes a través de una consultoría,
+                   si gustas puedes navegar en mis repositorios y dar un vistazo: <a class="ancor" href="https://github.com/becker7000" target="_blank" alt="MiGitHub"><strong>GitHub</strong></a>.  
+                </p>
+    
+                <div class="second-text">
+                    <img class="social" src="images/social-media.gif" alt="social">
+                    <p>
+                        Como fiel mexicano mi proposito es poner mi granito de arena 
+                        para el progreso de mis compañeros y por ello estuve dando clases de
+                        matemáticas básicas en una escuelita de cursos llamada:
+                        <a class="ancor" href="https://es-la.facebook.com/PreparacionIPN/videos/gu%C3%ADa-oficial-ipn-2020/648040855929434" target="_blank" alt="PIPN"><strong>Preparación IPN</strong></a>,
+                        el que explica en el video ese soy yo.
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="third-container" id="habilidades">
+
+        <div class="hobbies">
+            <h3>¿Cuáles son mis hobbies?</h3>
+            <ul>
+                <li>Escuchar música</li>
+                <li>Leer sobre tecnología</li>
+                <li>Tocar la guitarra</li>
+                <li>Trotar en el frío</li>
+                <li>Visitar cafeterías</li>
+            </ul>
+        </div>
+
+        <div class="abilities">
+            <h3>¿Cuáles son mis habilidades?</h3>
+            <ul>
+                <li>Dar explicaciones sencillas</li>
+                <li>Hablar frente a un público</li>
+                <li>Aprender nuevas tecnologías</li>
+                <li>Organizar mis pendientes</li>
+                <li>Crear nuevas amistades</li>
+            </ul>
+        </div>
+
+        <div class="languages">
+            <h3>¿Qué lenguajes he aprendido?</h3>
+            <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Haskell</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fifth-container">
+        <h4>Aquí un par de apuntes que tomé en markdown para hacer este sitio...</h4>
+        <div class="markdown">
+            <div class="iframe-c">
+                <iframe class="notesA" src="Apuntes/notas001.md" width="100%" height="260" style="border: 2px solid #444444;"></iframe>
+            </div>
+            <div class="iframe-c">
+                <iframe class="notesB" src="Apuntes/notas002.md" width="100%" height="260" style="border: 2px solid #444444;"></iframe>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="fourth-container" id="contacto">
+        <br/>
+        <h3>Redes sociales</h3>
+        <h4>En mis redes muestro un poco sobre mis gustos, sígueme...</h4>
+        <div class="links-social-media">
+            <a href="https://www.facebook.com/erickbeckerscode" target="_blank"><img class="fb" src="images/Facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/erickbecker7000/" target="_blank"><img class="in" src="images/Instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+
+    <script>
+        let intervalo;
+
+        //Esta función ejecuta varias veces la función parpadear.
+        function cambiarColor(){
+            intervalo=setInterval(parpadear,2000);
+        }
+
+        //Esta función cambiar el color del título.
+        function parpadear(){
+            let titulo=document.getElementById("title-container");
+            titulo.style.color=(titulo.style.color=='white')? 'black' : 'white' ;
+        }
+
+    </script>
+    
+</body>
+</html>
