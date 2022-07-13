@@ -1,0 +1,36 @@
+/*  Acomodar los cuadros en horizontal en el siguiente orden:
+    azul amarillo y rojo*/
+
+/*  Acomodar los cuadros en diagonal en el siguiente orden:
+    amarillo, azul y rojo*/
+
+.rojo{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+    top: 200px
+}
+
+.azul{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.amarillo{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
